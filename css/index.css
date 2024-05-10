@@ -1,1 +1,60 @@
 /* CSS Code, den es für die Start Page braucht */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    text-align: right; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center; 
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
