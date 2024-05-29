@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/newsletter.css" />
+  <style>
+    .phone-container {
+      display: flex;
+      align-items: center;
+    }
+    .phone-container select {
+      border: 1px solid #ccc;
+      border-right: none;
+      height: 100%;
+      padding: 0 10px;
+      font-size: 1em;
+    }
+    .phone-container input[type="tel"] {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 0 10px;
+      font-size: 1em;
+    }
+    .phone-container input[type="tel"]:focus,
+    .phone-container select:focus {
+      outline: none;
+      border-color: #66afe9;
+      box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo-link">
+      <img src="images\Logo 3.png" alt="Logo" class="logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="https://www.uni-giessen.de/de/forschung/bilder/platzhalter_banner.png/@@download/image/platzhalter_banner.png" alt="Header Bild">
+  </header>
+
+  <div class="content">
+    <h1>Newsletter</h1>
+    <p>Melde dich bei unserem Newsletter an und<br> bleib auf dem Laufenden!</p>
+  </div>
+    
+  <form class="newsletter-form" id="newsletterForm">
+    <label for="vorname">Vorname</label>
+    <input type="text" id="vorname" name="vorname" required>
+    
+    <label for="nachname">Nachname</label>
+    <input type="text" id="nachname" name="nachname" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    
+    <label for="telefonnummer">Telefonnummer</label>
+    <div class="phone-container">
+      <select id="landervorwahl" name="landervorwahl" required>
+        <option value="+49">+49</option>
+        <option value="+43">+43</option>
+        <option value="+41">+41</option>
+        
+      </select>
+      <input type="tel" id="telefonnummer" name="telefonnummer" required>
+    </div>
+    
+    <button type="submit">Jetzt anmelden!</button>
+  </form>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="about.html">Newsletter</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+      <li><a href="privacy.html">Datenschutz</a></li>
+    </ul>
+  </footer>
+  <script src="./js/databaseClient.js"></script>
+  <script src="./js/form.js"></script>
+  <div id="spinner" class="spinner"></div>
+
+</body>
+</html>

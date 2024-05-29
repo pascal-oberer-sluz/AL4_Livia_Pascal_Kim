@@ -1,42 +1,53 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hallo</title>
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Footwear Studio</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
 
-  <body>
-    <nav>
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Game</a></li>
-          <li><a href="#">Newsletter</a></li>
-      </ul>
+<body>
+  <nav>
+    <a href="index.html" class="logo-link">
+      <img src="images/Logo 3.png" alt="Logo" class="logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
   </nav>
 
   <header>
-      <img src="https://www.uni-giessen.de/de/forschung/bilder/platzhalter_banner.png/@@download/image/platzhalter_banner.png" alt="Header Bild">
+    <img src="https://www.uni-giessen.de/de/forschung/bilder/platzhalter_banner.png/@@download/image/platzhalter_banner.png" alt="Header Bild">
   </header>
 
   <div class="content">
-      <h1>Titel</h1>
-
+    <h1>Titel</h1>
+    <div class="image-slider">
+      <button class="slider-arrow left-arrow" onclick="prevSlide()">&#9664;</button>
       <div class="image-gallery">
-          <img src="img1" alt="Bild 1">
-          <img src="img2" alt="Bild 2">
-          <img src="img3" alt="Bild 3">
+        <img src="images\evospeed_tokyo_future4 .jpg" alt="Bild 1">
+        <img src="images\Fuji_Lite4.jpg" alt="Bild 2">
+        <img src="images\gel_rocket11.jpg" alt="Bild 3">
       </div>
-
-      <h3>Untertitel</h3>
-      <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna a. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna a</p>
+      <button class="slider-arrow right-arrow" onclick="nextSlide()">&#9654;</button>
+    </div>
+    <h3>Untertitel</h3>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna a. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna a</p>
   </div>
 
   <footer>
-      <p>Footer Bereich</p>
+    <ul class="footer-links">
+      <li><a href="about.html">Newsletter</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+      <li><a href="privacy.html">Datenschutz</a></li>
+    </ul>
   </footer>
 
-  </body>
+  <script src="./js/index.js"></script>
+  <script src="./js/databaseClient.js"></script>
+</body>
 </html>

@@ -1,44 +1,49 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html> 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TITEL_EINGEBEN</title>
+    <title>HANGMAN</title>
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/game.css" />
   </head>
 
   <body>
-    <div class="header">header</div>
-    <div class="content">
-      <div id="game-container">
-        <div class="game-info">
-          Drücke eine Taste, um zu springen.<br />
-          Weiche den Steinen aus.<br />
-          Erreiche 100 Punkte, um einen Preis zu gewinnen.
-        </div>
+    <nav>
+      <a href="index.html" class="logo-link">
+        <img src="images\Logo 3.png" alt="Logo" class="logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
 
-        <div id="game">
-          <div id="game-start">
-            <div class="startScreenText">Klicke, um das Spiel zu starten.</div>
-          </div>
-          <div id="game-background"></div>
-          <div id="game-dino"></div>
-          <div id="game-rock"></div>
-          <div id="game-score">0</div>
-        </div>
+    <header>
+      <img src="https://www.uni-giessen.de/de/forschung/bilder/platzhalter_banner.png/@@download/image/platzhalter_banner.png" alt="Header Bild">
+    </header>
 
-        <div id="game-end" class="hidden">
-          <div id="game-winner" class="hidden">
-            ⭐ ⭐ ⭐ Glückwunsch ⭐ ⭐ ⭐ <br />
-            Du hast mehr als 100 Punkte erzielt.
-          </div>
-          Das Spiel ist zu Ende.<br />
-          Klicke auf das Spiel, um erneut zu spielen.
-        </div>
+    <div class="container">
+      <div id="options-container"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas"></canvas>
+      <div id="new-game-container" class="new-game-popup hide">
+        <div id="result-text"></div>
+        <button id="new-game-button">New Game</button>
       </div>
     </div>
-    <div class="footer">footer</div>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a href="about.html">Newsletter</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="privacy.html">Datenschutz</a></li>
+      </ul>
+    </footer>
+    
     <script src="./js/game.js"></script>
+    <script src="./js/databaseClient.js"></script>
   </body>
 </html>
