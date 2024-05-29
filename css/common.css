@@ -42,6 +42,11 @@ nav {
   font-size: 16px;
 }
 
+.nav-links a.active {
+  color: #bababa; 
+  text-decoration: underline;
+}
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -97,3 +102,8 @@ footer {
   color: white;
   font-size: 16px;
 }
+
+.Hinweis {
+  color: #a3a3a3;
+}
+
