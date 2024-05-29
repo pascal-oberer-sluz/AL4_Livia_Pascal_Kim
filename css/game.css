@@ -1,138 +1,133 @@
-/* CSS Code, den es für die Game Page braucht */
 
-/* Hilfsklasse */
-.hidden {
-  display: none;
+
+body {
+  background-color: #706f6f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Spiel-Container mit Beschreibung und Game-Over Text */
-.content-game {
-  min-height: 600px;
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  margin: 3em auto;
+  padding: 3em;
+  border-radius: 0.6em;
 }
 
-#game-container {
-  width: 600px;
-  margin: auto;
+#options-container {
+  text-align: center;
 }
 
-#game {
-  position: relative;
-  height: 300px;
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.3em;
+  text-transform: capitalize;
   cursor: pointer;
 }
 
-.game-info {
-  margin-top: 12px;
-  margin-bottom: 12px;
+#options-container button:disabled {
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #efefef;
 }
 
-#game-end {
-  margin-top: 12px;
-  margin-bottom: 12px;
+#options-container button.active {
+  background-color: #706f6f;
+  border: 3px solid #000000;
+  color: #fff;
 }
 
-/* Elemente im Spiel */
-#game-background {
-  position: absolute;
-  width: 600px;
-  height: 300px;
-  background-image: url("../images/background.png");
-  background-size: cover;
-}
-
-.bg-animation {
-  animation: moveBg 10.33s linear infinite;
-}
-
-@keyframes moveBg {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: -600px 0;
-  }
-}
-
-#game-dino {
-  height: 75px;
-  width: 75px;
-  top: 225px;
-  position: relative;
-  background-image: url("../images/dino.png");
-  background-size: cover;
-}
-
-.dino-dies {
-  background-color: red;
-}
-
-#game-rock {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 175px;
-  left: 550px;
-  background-image: url("../images/rock.png");
-  background-size: cover;
-}
-
-.rock-animation {
-  animation: rock 1.33s infinite;
-}
-
-@keyframes rock {
-  0% {
-    left: 550px;
-  }
-
-  100% {
-    left: -50px;
-  }
-}
-
-.jump-animation {
-  animation: jump 0.5s;
-}
-
-@keyframes jump {
-  0% {
-    top: 225px;
-  }
-
-  50% {
-    top: 75px;
-  }
-
-  75% {
-    top: 75px;
-  }
-
-  100% {
-    top: 225px;
-  }
-}
-
-#game-start {
-  position: absolute;
+.letter-container {
   width: 100%;
-  height: 100%;
-  z-index: 999;
-  opacity: 0.7;
-  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
 }
 
-.startScreenText {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: white;
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
-#game-score {
+.new-game-popup {
+  background-color: #ffffff;
   position: absolute;
+  left: 0;
   top: 0;
-  right: 0;
-  margin: 12px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
 }
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 10px solid #706f6f;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #706f6f;
+  border: 3px solid #000000;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.win-msg {
+  color: #39d78d;
+}
+
+.lose-msg {
+  color: #fe5152;
+}
+
+
