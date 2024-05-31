@@ -38,7 +38,7 @@ document.getElementById('newsletterForm').addEventListener('submit', async funct
     if (formIsValid) {
       try {
         // Formulardaten in die Datenbank einfügen
-        await databaseClient.insertInto("user", {
+        await databaseClient.insertInto("formular", {
           vorname: vorname,
           nachname: nachname,
           email: email,
