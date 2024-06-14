@@ -46,6 +46,10 @@
   right: 0;
 }
 
+.image-name {
+  margin-top: 10px;
+}
+
 .product-container {
   display: flex;
   justify-content: space-around;
@@ -67,4 +71,30 @@
 
 .product-item p {
   margin-top: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links a {
+  text-decoration: underline;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-links li a:hover {
+  color: #bababa; 
+}
+
+.Hinweis {
+  color: #a3a3a3;
 }

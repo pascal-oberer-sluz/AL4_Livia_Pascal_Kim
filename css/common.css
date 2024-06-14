@@ -41,6 +41,9 @@ nav {
   color: white;
   font-size: 16px;
 }
+.nav-links a:hover {
+  color: #bababa; /* Farbe beim Hover ändern */
+}
 
 .nav-links a.active {
   color: #bababa;
@@ -99,9 +102,13 @@ footer {
 }
 
 .footer-links a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   font-size: 16px;
+}
+
+.footer-links li a:hover {
+  color: #bababa; 
 }
 
 .Hinweis {
