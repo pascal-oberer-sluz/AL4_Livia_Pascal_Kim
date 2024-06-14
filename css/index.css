@@ -1,8 +1,7 @@
-
 .content {
   flex: 1;
   padding: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .image-slider {
@@ -47,4 +46,25 @@
   right: 0;
 }
 
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
+.product-item {
+  flex: 0 0 calc(30% - 20px); /* Anpassen der Breite der Produkt-Container */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.product-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item p {
+  margin-top: 10px;
+}
