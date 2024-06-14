@@ -17,6 +17,10 @@ function showSlides(index) {
   slides.forEach((slide) => {
     slide.style.transform = `translateX(${offset}%)`;
   });
+
+  // Bildname aktualisieren
+  const currentImageName = slides[currentIndex].alt;
+  document.getElementById('current-image-name').innerText = currentImageName;
 }
 
 function nextSlide() {
